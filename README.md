@@ -1,4 +1,4 @@
-## EL-9123 Final Project : Facial Recognition
+# EL-9123 Final Project : Facial Recognition
 
 In this repository, you can find 
 ```
@@ -11,8 +11,8 @@ In this repository, you can find
 3. ML_final_project.pdf: the report for this project. So in this readme file, on instruction about downloading dataset and configuration of Docker will be provided.
 ```
 
-## Instruction for downloading dataset and setup the environment
-# The project structure
+# Instruction for downloading dataset and setup the environment
+## The project structure
 ```
 ├── Dockerfile
 ├── etc
@@ -29,7 +29,7 @@ In this repository, you can find
 │ └── train_classifier.py
 ├── requirements.txt
 ```
-# Downlaod Lfw dataset
+## Downlaod Lfw dataset
 ```
 # Make sure to put all the image folder under <data> folder. A <data> folder can be created by yourself.
 curl -O http://vis-www.cs.umass.edu/lfw/lfw.tgz
