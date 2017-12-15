@@ -9,7 +9,7 @@ In this repository, you can find
 2. result.txt: the result of the project
 ```
 ```
-3. ML_final_project.pdf: the report for this project. So in this readme file, on instruction about downloading dataset and configuration of Docker will be provided.
+3. ML_final_project.pdf: the report for this project. So in this readme file, instruction about downloading dataset and configuration of Docker will be provided.
 ```
 
 
