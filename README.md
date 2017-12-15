@@ -1,5 +1,6 @@
 # EL-9123 Final Project : Facial Recognition
 
+
 In this repository, you can find 
 ```
 1. All the code that is required to do this project 
@@ -10,6 +11,7 @@ In this repository, you can find
 ```
 3. ML_final_project.pdf: the report for this project. So in this readme file, on instruction about downloading dataset and configuration of Docker will be provided.
 ```
+
 
 # Instruction for downloading dataset and setup the environment
 ## The project structure
@@ -28,6 +30,8 @@ In this repository, you can find
 │ ├── shape_predictor_68_face_landmarks.dat
 │ └── train_classifier.py
 ├── requirements.txt
+
+
 ```
 ## Downlaod Lfw dataset
 ```
