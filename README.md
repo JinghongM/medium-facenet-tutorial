@@ -103,4 +103,4 @@ python3 /medium-facenet-tutorial/medium_facenet_tutorial/train_classifier.py \
 
 # Reference
 The foundation of this project and some of the parameters tuned in this project is based on 
-* [Facenet](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7298682)
+* [FaceNet](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7298682)
