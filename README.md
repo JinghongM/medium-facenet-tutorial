@@ -34,17 +34,17 @@ In this repository, you can find
 
 ```
 ## Downlaod Lfw dataset
-```
 The lfw(Labeled Faces in the Wild) is a database of face photographs designed for face recognition which contains more than 13,000 images of faces collected from the lab. The label of each image is the name of folder, which is the same we did in Lab 8.
+```
 # Make sure to put all the image folder under <data> folder. A <data> folder can be created by yourself.
 curl -O http://vis-www.cs.umass.edu/lfw/lfw.tgz
 tar -xzvf lfw.tgz
 ```
 
 ## Docker environment
+Because of the huge amount of packets we need in the project, we use a docker to finish the prediction. The docker image can be found online.
 ```
 # Make sure you assign enough cores to the VM so that this process can be faster.
-Because of the huge amount of packets we need in the project, we use a docker to finish the prediction. The docker image can be found online.
 curl https://get.docker.com | sh
 docker build -t colemurray/medium-facenet-tutorial -f Dockerfile .
 ```
