@@ -1,6 +1,8 @@
 import logging
 import os
 
+import random
+
 import numpy as np
 import tensorflow as tf
 from tensorflow.python.framework import ops
@@ -44,7 +46,12 @@ def read_data(image_paths, label_list, image_size, batch_size, max_nrof_epochs, 
         image = tf.image.per_image_standardization(image)
 
         if random_flip:
-            image = tf.image.random_flip_left_right(image)
+            rand_num=random.randint(0,3)
+            if rand_num <= 1:
+                image=tf.image.random_flip_up_down(image)
+            else :
+                image=tf.image.random_flip_left_right(image)
+            #image = tf.image.random_flip_left_right(image)
 
         if random_brightness:
             image = tf.image.random_brightness(image, max_delta=0.3)
