@@ -1,5 +1,6 @@
 # EL-9123 Final Project : Facial Recognition
 
+In the project, we built a Convolution Neural Networking with a SVM classification network to implement facial recognition. The environment is built in the Docker. The dataset is LFW. The preprocessing is used from CMU. And the highest accuracy rate is 91%.
 
 In this repository, you can find 
 ```
