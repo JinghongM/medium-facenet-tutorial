@@ -84,7 +84,7 @@ python3 /medium-facenet-tutorial/medium_facenet_tutorial/train_classifier.py \
 --num-epochs 25 \
 --min-num-images-per-class 10 \
 --is-train 
-```
+```f
 
 ## Test the classifier
 ```
