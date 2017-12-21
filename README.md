@@ -34,7 +34,7 @@ In this repository, you can find
 
 ```
 ## Downlaod LFW dataset
-# Labeled Faces in the Wild (LFW), a database of face photographs designed for studying the problem of unconstrained face recognition. The data set contains more than 13,000 images of faces collected from the web. Each face has been labeled with the name of the person pictured. 1680 of the people pictured have two or more distinct photos in the data set. 
+#### Labeled Faces in the Wild (LFW), a database of face photographs designed for studying the problem of unconstrained face recognition. The data set contains more than 13,000 images of faces collected from the web. Each face has been labeled with the name of the person pictured. 1680 of the people pictured have two or more distinct photos in the data set. 
 ```
 # Make sure to put all the image folder under <data> folder. A <data> folder can be created by yourself.
 curl -O http://vis-www.cs.umass.edu/lfw/lfw.tgz
