@@ -33,8 +33,7 @@ In this repository, you can find
 
 
 ```
-## Downlaod LFW dataset
-#### Labeled Faces in the Wild (LFW), a database of face photographs designed for studying the problem of unconstrained face recognition. The data set contains more than 13,000 images of faces collected from the web. Each face has been labeled with the name of the person pictured. 1680 of the people pictured have two or more distinct photos in the data set. 
+## Downlaod Lfw dataset
 ```
 # Make sure to put all the image folder under <data> folder. A <data> folder can be created by yourself.
 curl -O http://vis-www.cs.umass.edu/lfw/lfw.tgz
@@ -56,7 +55,8 @@ bzip2 -d shape_predictor_68_facelandmarks.dat.bz2
 ```
 
 ## Preprocess
-
+We use the downloaded landmark predictor before to preprocessing the image.
+Before passing images into the CNN model, we use a preprocessing filter from CMU to detect a face in the image and find the largest face part in the image and center the filtered part. If a face can't be found in the image, a logger will be displayed in the console.
 ```
 docker run -v $PWD:/medium-facenet-tutorial \
 -e PYTHONPATH=$PYTHONPATH:/medium-facenet-tutorial \
@@ -73,6 +73,8 @@ docker run -v $PWD:/medium-facenet-tutorial \
 ```
 
 ## Train the classifier
+Before the images per figure in the dataset are only 1-5 pictures. The classifier will randomly create multiply training sets by flipping left and right, changing the brightness and contrast of the original images in order to avoid the overfitting.
+We also add another processing by random flip the training set up and down.
 ```
 docker run -v $PWD:/medium-facenet-tutorial \
 -e PYTHONPATH=$PYTHONPATH:/medium-facenet-tutorial \
@@ -88,6 +90,7 @@ python3 /medium-facenet-tutorial/medium_facenet_tutorial/train_classifier.py \
 ```
 
 ## Test the classifier
+In this project, we use the original training dataset as the test sets. The best accuracy rate is 91% by using 5 epochs, 256 batches
 ```
 docker run -v $PWD:/medium-facenet-tutorial \
 -e PYTHONPATH=$PYTHONPATH:/medium-facenet-tutorial \
